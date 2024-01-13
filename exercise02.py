@@ -1,0 +1,6 @@
+ID_number = input("Input your ID number ")
+print(ID_number)
+print("Year of entrance:", ID_number[:2])
+print("Faculty code:", ID_number[3:5])
+print("Departmental code:", ID_number[6:8])
+print("Your departmental number:", ID_number[9:])
