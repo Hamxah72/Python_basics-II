@@ -1,22 +1,12 @@
+def say_hello(person1, person2):
+    print("Hello " + person1 + "," + " how are you doing? " + person2 + " is waiting for you.")
 
-def sum(num1=0, num2=0):
-    if (type(num1) is not int or type(num2) is not int):
-        return 0
-    return num1 + num2
+say_hello("Hamxah" , "Adamz")
+say_hello("Danny", "Aisha")
 
-total = sum(18,2)   
-print(total)
+def fahr2celsius(fahr):
+    celcius = (5 * (fahr -32)) / 9
+    return celcius
 
-def multiple_items(*args):
-    print(args)
-    print(type(args))
-
-multiple_items("Hamxah", "Adamz", "Fideh", "Moh")
-
-def multi_named_items(**kwargs):
-    print(kwargs)
-    print(type(kwargs))
-
-multi_named_items   (first="Ishaq", last="Hamxah")
-
-    
+input("Celcius: ", round(fahr2celsius(100),2))
+print("kelvin: ", round(fahr2celsius(100) + 273.5 ,2))
